@@ -1,11 +1,9 @@
-name = SMTP + HTML Email Class
+name = SMTP + HTMLEmail or MimeMail Class
 description = Resolves Troubles on Acquia or Pantheon Cloud Hosting.
 package = Mail
 core = 7.x
-version = 1.0
+version = 1.1
 author = Nikita Makarov <Nikita.Makarov@effective-soft.com>
 
-dependencies[] = smtp
-dependencies[] = htmlmail
-
-files[] = includes/HTMLMailSystem__SmtpMailSystem.mail.inc 
+;files[] = includes/HTMLMailSystem__SmtpMailSystem.mail.inc
+;files[] = includes/MimeMailSystem__SmtpMailSystem.mail.inc

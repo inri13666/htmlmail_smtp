@@ -1,0 +1,13 @@
+<?php
+function htmlmail_smtp_init()
+{
+    $smtp = module_exists('smtp');
+    if ($smtp) {
+        if (module_exists('htmlmail')) {
+            require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'includes/HTMLMailSystem__SmtpMailSystem.mail.inc';
+        }
+        if (module_exists('mimemail')) {
+            require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'includes/MimeMailSystem__SmtpMailSystem.mail.inc';
+        }
+    }
+}
